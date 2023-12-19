@@ -1,36 +1,65 @@
+# Mastermind Game (Python)
+Welcome to my version of the classic Mastermind game, pitting you against a computer opponent. 
+
+Getting Started:
+
+### Enter your name in the welcome popup to kick things off.
+<img src="./images/Signin.png" alt="Sign In" style="width:500px;">
 
 
-To compile:
+### Gameplay:
+
+<ol>
+    <li>You've got 10 rounds to crack the four-color code.</li>
+    <li>Your guesses are laid out in 10 rows of 4 large circles on the screen.</li>
+    <li>Use the six colored circles at the bottom to pick the four colors for your code.</li>
+        <ul>
+            <li>Order matters and colors can repeat!</li>
+            <li>Made a mistake? The red "x" lets you backtrack</li>
+            <li>Quit anytime without saving your name or score.
+        </ul>
+    <li>Click the green checkmark to submit your guess and get feedback from the CPU</li>
+        <li>Each guess row has four smaller circles to the right, indicating feedback for that row:</li>
+        <ul>
+            <li>Black circles mean you've got a correct color in the correct spot (bulls).</li>
+            <li>Red circles mean you've got a correct color but in the wrong spot (cows).</li>
+        </ul>
+    <li>Crack the code in 10 rounds, and your name goes on the Leaderboard.</li>
+    <li>The Leaderboard on the right keeps track of past players and their scores.</li>
+    <br>
+    <img src="./images/LeaderBoard.png" alt="LeaderBoard" style="width:500px;">
+
+
+    
+     
+
+</ol>
+
+
+# Compilation Notes
+On command line use:
 ```
 python3 mastermind_game.py
 ```
-
-#Packages Needed:
+# Packages Needed:
 This graphics in this game were created using <a href="https://docs.python.org/3/library/turtle.html"> Turtle graphics</a> library while <a href="https://docs.python.org/3/library/tkinter.html">Tk interface</a> is used for the GUI.
 
-#Project Title: Mastermind Game (Python)
-
-<b>The Mastermind Game project is a Python-based application I created during the early stages of my Master's Program at Northeastern University. It serves as a foundational project, representing my initial exposure to key programming concepts.</b>
-
-<p>
+## Creator's Notes
+<i>The Mastermind Game project is a Python-based application I created during the early stages of <a href="https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science">the Align Program at Northeastern University</a>.  While a relatively simple game, Mastermind holds significance as a starting point in my study of computer science. It captures my early days of dipping into programming - learning the fundamentals of object-oriented Programming and figuring out how to blend design elements into a real-world application. During this time, I started learning the fundamentals of object-oriented programming, a methodology I've adhered to ever since. What makes it even more special is that it was the first time I enjoyed full creative autonomy over a project of my own, venturing into the world of GUI and applying my design skills in a new field.</i>
 
 I worked independently on this project, acting as the sole contributor.
-Learning Objectives: The project aimed to solidify my understanding of fundamental programming concepts, including global vs local scope, classes, and the basics of object-oriented programming.
-Integration of Design: Leveraging my graphic design skills, I crafted all the visual elements of the game, including images and the graphical user interface (GUI).
-Technologies Used:
+<p>
+<b>Learning Objectives:</b> The project aimed to solidify my understanding of fundamental programming concepts, including global vs local scope, classes, and the basics of object-oriented programming.
+<br>
+<b>Integration of Design:</b> Leveraging my graphic design skills, I crafted all the visual elements of the game, including images and the graphical user interface (GUI).
 
-Python: The primary programming language for implementing the game logic.
-Turtle Graphics and Tk Interface: Utilized for creating the visual aspects of the game.
-GitHub Link:
-Mastermind Game on GitHub
+## Technologies Used:
+<p><b>Language:</b> Python
+<p><b>GUI:</b> Tk Interface
+<p><b>Graphics:</b> Turtle Graphics
 
-Significance:
-While a relatively simple game, the Mastermind project holds significance as a starting point in my coding journey. It reflects my early exploration of programming and the integration of design elements into a functional application.
- 
-
-<i>Original Read Me (4/2021):
-
-I favored using classes for most Turtle parts of my program as I was having
+## Original Read Me (4/2021):
+<i>I favored using classes for most Turtle parts of my program as I was having
  difficulty getting the Turtle and non-Turtle parts to talk to each other
  without using global variables. Each item that the user needs to click I
  initialized with it's own variable name so it would be easy to keep track
