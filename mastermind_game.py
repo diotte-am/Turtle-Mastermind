@@ -90,15 +90,15 @@ def game_driver():
     window.colormode(255)
     window.bgcolor(184, 178, 207)
     window.setup(900, 800)
-    window.addshape("checkbutton.gif")
-    window.addshape("xbutton.gif")
-    window.addshape("quit.gif")
-    window.addshape("quitmsg.gif")
-    window.addshape("Lose.gif")
-    window.addshape("winner.gif")
-    window.addshape("leaderboard_error.gif")
-    window.addshape("leaderboard.gif")
-    window.addshape("mastermindtitle.gif")
+    window.addshape("./images/checkbutton.gif")
+    window.addshape("./images/xbutton.gif")
+    window.addshape("./images/quit.gif")
+    window.addshape("./images/quitmsg.gif")
+    window.addshape("./images/Lose.gif")
+    window.addshape("./images/winner.gif")
+    window.addshape("./images/leaderboard_error.gif")
+    window.addshape("./images/leaderboard.gif")
+    window.addshape("./images/mastermindtitle.gif")
     
     game_round = Round(0, 9)
     guess_counter = Round(0, 4)
@@ -131,13 +131,13 @@ def game_driver():
     black.draw()
 
     quit_button = Button(Point(135, -205), 30, 15)
-    quit_button.set_image("quit.gif")
+    quit_button.set_image("./images/quit.gif")
 
     x_button = Button(Point(5, -205), 15, 15)
-    x_button.set_image("xbutton.gif")
+    x_button.set_image("./images/xbutton.gif")
 
     check_button = Button(Point(-30, -205), 15, 15)
-    check_button.set_image("checkbutton.gif")
+    check_button.set_image("./images/checkbutton.gif")
 
     leaderboard_error = Button(Point(0, 0), 15, 15)
 
@@ -146,10 +146,10 @@ def game_driver():
     lose_message = Button(Point(0, 0), 15, 15)
 
     leaderboard = Button(Point(50, 300), 150, 29)
-    leaderboard.set_image("leaderboard.gif")
+    leaderboard.set_image("./images/leaderboard.gif")
 
     mastermind = Button(Point(225, 90), 50, 350)
-    mastermind.set_image("mastermindtitle.gif")
+    mastermind.set_image("./images/mastermindtitle.gif")
 
     # input from Turtle screen
     name = get_name()
@@ -160,10 +160,10 @@ def game_driver():
     # grid of Marbles showing bulls & cows
     bull_cow = draw_gameboard(-150, 299, 10, 2, True, 18, -18, 6)
     try:
-        sorted_scores = load_winners("high_scores.txt")
+        sorted_scores = load_winners("./text/high_scores.txt")
         display_leaderboard(sorted_scores)
     except:
-        leaderboard_error.set_image('leaderboard_error.gif')
+        leaderboard_error.set_image('./images/leaderboard_error.gif')
         #shows error window but game continues..
         window.ontimer(leaderboard_error.delete_shape, 1000)
     def get_click(x, y):
@@ -175,7 +175,7 @@ def game_driver():
         location = Point(x,y)
 
         if quit_button.clicked_in_region(x, y):
-            quit_message.set_image('quitmsg.gif')
+            quit_message.set_image('./images/quitmsg.gif')
             print("See you soon, {}!".format(name))
             window.ontimer(bye, 1000)
             
@@ -206,7 +206,7 @@ def game_driver():
                     window.ontimer(bye, 1000)
                 # victory message
                 if bull == 4:
-                    with open('high_scores.txt', mode='a') as high_scores:
+                    with open('./text/high_scores.txt', mode='a') as high_scores:
                         high_scores.write(str(game_round.current + 1) + " " +\
                                           name[:33] + "\n")
                     quit_message.set_image('winner.gif')
