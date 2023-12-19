@@ -1,16 +1,34 @@
-This was the final project from my first semester in the <a href="https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science">Align program at Northeastern</a>
 
-This is a Mastermind game created using <a href="https://docs.python.org/3/library/turtle.html"> Turtle graphics</a>
-library in Python. 
-
-<a href="https://docs.python.org/3/library/tkinter.html">Tk interface</a> is used for the GUI, so you will need that package as well.
 
 To compile:
 ```
 python3 mastermind_game.py
 ```
+
+#Packages Needed:
+This graphics in this game were created using <a href="https://docs.python.org/3/library/turtle.html"> Turtle graphics</a> library while <a href="https://docs.python.org/3/library/tkinter.html">Tk interface</a> is used for the GUI.
+
+#Project Title: Mastermind Game (Python)
+
+<b>The Mastermind Game project is a Python-based application I created during the early stages of my Master's Program at Northeastern University. It serves as a foundational project, representing my initial exposure to key programming concepts.</b>
+
+<p>
+
+I worked independently on this project, acting as the sole contributor.
+Learning Objectives: The project aimed to solidify my understanding of fundamental programming concepts, including global vs local scope, classes, and the basics of object-oriented programming.
+Integration of Design: Leveraging my graphic design skills, I crafted all the visual elements of the game, including images and the graphical user interface (GUI).
+Technologies Used:
+
+Python: The primary programming language for implementing the game logic.
+Turtle Graphics and Tk Interface: Utilized for creating the visual aspects of the game.
+GitHub Link:
+Mastermind Game on GitHub
+
+Significance:
+While a relatively simple game, the Mastermind project holds significance as a starting point in my coding journey. It reflects my early exploration of programming and the integration of design elements into a functional application.
  
-Original Read Me (4/21):
+
+<i>Original Read Me (4/2021):
 
 I favored using classes for most Turtle parts of my program as I was having
  difficulty getting the Turtle and non-Turtle parts to talk to each other
@@ -50,5 +68,6 @@ I favored using classes for most Turtle parts of my program as I was having
  I created a copy of both the guess and secret code lists so I could
  delete each marble as I scored it, without messing up the index I was
  iterating over.
+ </i>
  
                                                     
