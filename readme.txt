@@ -1,5 +1,6 @@
-This was the final project from my first semester of the Align program at Northeastern (https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science) and my first "real" program. I knew nothing about how to structure files yet so everything's in the same directory. I hadn't learned anything about optimization yet, so the screen loads painfully slow. And unfortunately, we were not using github at the time, so I do not have a record of commits. 
-
+This was the final project from my first semester of the 
+<a href="https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science">Align program at Northeastern</a>
+ 
 Original Read Me (4/21):
 
 I favored using classes for most Turtle parts of my program as I was having
