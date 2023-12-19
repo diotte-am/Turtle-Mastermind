@@ -1,5 +1,14 @@
-This was the final project from my first semester of the 
-<a href="https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science">Align program at Northeastern</a>
+This was the final project from my first semester in the <a href="https://www.khoury.northeastern.edu/programs/align-masters-of-science-in-computer-science">Align program at Northeastern</a>
+
+This is a Mastermind game created using <a href="https://docs.python.org/3/library/turtle.html"> Turtle graphics</a>
+library in Python. 
+
+<a href="https://docs.python.org/3/library/tkinter.html">Tk interface</a> is used for the GUI, so you will need that package as well.
+
+To compile:
+```
+python3 mastermind_game.py
+```
  
 Original Read Me (4/21):
 
